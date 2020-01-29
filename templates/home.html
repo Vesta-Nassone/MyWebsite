@@ -40,26 +40,34 @@
       <!-- Avatar image in top left corner -->
       <img src="{% static  'vesta.jpg' %}" alt="benzo" class='profile-img' style="width:100%">
       <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-        <i class="fa fa-home w3-xxlarge"></i>
+        <i class="fa fa-home w3-text-teal w3-xxlarge"></i>
         <p>HOME</p>
       </a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-th w3-text-teal w3-xxlarge"></i>
+            <p> PORTFOLIO</p>
+        </a>
       <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-user w3-xxlarge"></i>
+        <i class="fa fa-user w3-text-teal w3-xxlarge"></i>
         <p>ABOUT</p>
       </a>
       <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-eye w3-xxlarge"></i>
+        <i class="fa fa-eye w3-text-teal w3-xxlarge"></i>
         <p>PHOTOS</p>
       </a>
       <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-envelope w3-xxlarge"></i>
+        <i class="fa fa-envelope w3-text-teal w3-xxlarge"></i>
         <p>CONTACT</p>
       </a>
        </a>
       <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
        <!-- <i class="large material-icons" style="color: #EE6E73">flash_on</i>-->
-        <i class="fa fa-envelope w3-xxlarge"></i>
+        <i class="fa fa-envelope w3-text-teal w3-xxlarge"></i>
         <p>RESUME</p>
+      </a>
+      <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <p><i class="fa fa-briefcase fa-fw w3-large w3-text-teal w3-xxlarge"></i></p>
+        <p>EXPERIENCE</p>
       </a>
     </nav>
 
@@ -77,47 +85,50 @@
     <div class="w3-padding-large" id="main">
       <!-- Header/Home -->
       <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-        <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Vesta Nassone.</h1>
-        <p>Software Engineer.</p>
-        <img src="{% static 'vesta.jpg' %}" alt="benzo" class="w3-image" width="992" height="1108">
-          <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-          <i class="fa fa-facebook-official w3-hover-opacity"></i>
-          <i class="fa fa-instagram w3-hover-opacity"></i>
-          <i class="fa fa-snapchat w3-hover-opacity"></i>
-          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-          <i class="fa fa-twitter w3-hover-opacity"></i>
-          <i class="fa fa-linkedin w3-hover-opacity"></i>
-         </div>
+        <h1 class="w3-jumbo"><span class="w3-hide-small"></span><b>Tortoise CoderZ</b></h1>
+        <!--<p>Software Development Engineers.</p>-->
+        <img src="{% static 'tortoise_logo.png' %}" alt="benzo" class="w3-image" width="992" height="1108">
+          <!--<div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+              <i class="fa fa-facebook-official w3-hover-opacity"></i>
+              <i class="fa fa-instagram w3-hover-opacity"></i>
+              <i class="fa fa-snapchat w3-hover-opacity"></i>
+              <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+              <i class="fa fa-twitter w3-hover-opacity"></i>
+              <i class="fa fa-linkedin w3-hover-opacity"></i>
+         </div>-->
       </header>
 
       <!-- About Section -->
       <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="aboutNews">
-        <h2 class="w3-text-light-grey" align="center">Vesta Nassone</h2>
-        <hr style="width:200px" class="w3-opacity">
-        <p>I'm a software engineer based in Cape Town, South Africa.
+        <h2 class="w3-text-white" align="center"> Benzo - Software Development Engineer </h2>
+        <hr style="width:1000px" class="w3-opacity">
+        <p class="w3-text-white">I'm a software engineer based in Cape Town, South Africa.
            My interests are in using web and mobile application development and Cyber-security to make the internet as secure as possible.
-          I'm always learning something new and expanding my repertoire.
+            I'm always learning something new and expanding my repertoire. I am currently doing my Final year @UCT studying towards a
+            BSc Computer Science/Engineering. I have worked on multiple projects listed below, feel free to check them out and leave a comment😊, I am open for collaboration.
+            My immediate plans after graduating is to obviously start working as a software Engineer or Ethical hacker but in a period of 5 years i wish to start working on my own ideas,
+            hence start my own company given that i have accumulated enough expertise.
         </p>
         <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
         <h3 class="w3-center">VALUES</h3>
         <div class="w3-row-padding w3-center" style="margin-top:64px">
           <div class="w3-quarter">
-            <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+            <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
             <p class="w3-large">Responsive</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
           </div>
         <div class="w3-quarter">
-          <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+          <i class="fa fa-heart w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
           <p class="w3-large">Passion</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
         </div>
         <div class="w3-quarter">
-          <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+          <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
           <p class="w3-large">Design</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
         </div>
         <div class="w3-quarter">
-          <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+          <i class="fa fa-cog w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
           <p class="w3-large">Support</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
         </div>
@@ -127,7 +138,7 @@
         <h4 class="w3-padding-16 w3-text-light-grey">Programming Languages</h4>
         <p class="w3-wide">Java</p>
         <div class="w3-white">
-          <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+          <div class="w3-dark-grey" style="height:28px;width:90%"></div>
         </div>
         <p class="w3-wide">Python</p>
         <div class="w3-white">
@@ -135,12 +146,12 @@
         </div>
         <p class="w3-wide">Android App development</p>
         <div class="w3-white">
-          <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+          <div class="w3-dark-grey" style="height:28px;width:70%"></div>
         </div>
         <h4 class="w3-padding-16 w3-text-light-grey">Databases</h4>
          <p class="w3-wide">SQL Database</p>
         <div class="w3-white">
-          <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+          <div class="w3-dark-grey" style="height:28px;width:85%"></div>
         </div>
          <p class="w3-wide">Postgres Database</p>
         <div class="w3-white">
@@ -149,11 +160,11 @@
         <h4 class="w3-padding-16 w3-text-light-grey"> Frameworks</h4>
         <p class="w3-wide"> Django</p>
         <div class="w3-white">
-          <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+          <div class="w3-dark-grey" style="height:28px;width:65%"></div>
         </div>
          <p class="w3-wide"> Flutter</p>
         <div class="w3-white">
-          <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+          <div class="w3-dark-grey" style="height:28px;width:60%"></div>
         </div>
          <p class="w3-wide"> React</p>
         <div class="w3-white">
@@ -162,7 +173,7 @@
         <h4 class="w3-padding-16 w3-text-light-grey">Version Control</h4>
         <p class="w3-wide">Git</p>
         <div class="w3-white">
-          <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+          <div class="w3-dark-grey" style="height:28px;width:75%"></div>
         </div><br>
 
         <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
@@ -289,7 +300,7 @@
           </div>
 
           <div class="w3-half">
-            <img src="{% static 'tech_tablet.jpg' %}" style="width:100%">
+            <img src="{% static 'code.jpg' %}" style="width:100%">
             <img src="{% static 'tech_sound.jpg' %}" style="width:100%">
             <img src="{% static 'tech_drone.jpg' %}" style="width:100%">
           </div>      <!-- End photo grid -->
