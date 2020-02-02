@@ -5,4 +5,5 @@ from django.shortcuts import render
 def homepage(request):
     return render(request, 'home.html')
 
-
+def resume(request):
+    return render(request, 'resume.html')
