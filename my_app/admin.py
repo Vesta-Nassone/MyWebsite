@@ -1,4 +1,5 @@
-from django.contrib import admin
-from .models import Job
-
 # Register your models here.
+from .models import Project
+from django.contrib import admin
+
+admin.site.register(Project)
