@@ -1,14 +1,14 @@
 <!-- Contact Section -->
 <div class="w3-content w3-text-grey" id="contact">
   <div class="w3-section">
-    <form action="MAILTO:vestanassone@gmail.com" method="post" enctype="text/plain">
-       {% csrf_token %}
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-red" type="submit" value="send">
+    <form method='GET' enctype="text/plain" class="form-group">{% csrf_token %}
+      {{form}}
+      <p align="left"><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p align="left"><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p align="left"><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p align="left"><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p align="left">
+        <button class="w3-button w3-red" type="submit" value="Save">
           <i class="fa fa-paper-plane"></i>
             SEND MESSAGE
          </button>
